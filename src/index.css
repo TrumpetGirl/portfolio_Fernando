@@ -1,13 +1,10 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
   color: #333;
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-
 
 .app {
   flex: 1;
@@ -18,12 +15,14 @@ body {
   box-sizing: border-box;
 }
 
-
 .header {
   text-align: center;
-  padding: 50px 0 30px;
-  background-color: #6ca1df;
+  padding: 20px 0 30px;
+  background: linear-gradient(90deg, #1565c0, #6cb2ec);
   color: white;
+  max-width: 70%;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .header h1 {
@@ -44,18 +43,44 @@ body {
 
 .project-card {
   background-color: white;
-  padding: 20px;
-  flex: 1 1 280px;  
-  max-width: 400px; 
+  flex: 1 1 280px;
+  max-width: 400px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   border-radius: 8px;
   box-sizing: border-box;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon {
+  margin-right: 8px;          
+  vertical-align: middle;      
+  color: #1976d2;             
+  font-size: 1.4rem;           
+}
+
+.contact-link {
+  vertical-align: middle;     
+  color: #1976d2;              
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out
+}
+
+.contact-link:hover {
+  color: #0d47a1;              
 }
 
 .footer {
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid #ddd;
-  color: #777;
-  margin-top: auto; 
+  background: linear-gradient(90deg, #1565c0, #42a5f5);
+  color: white;
+  margin-top: auto;
 }
