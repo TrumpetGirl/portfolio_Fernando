@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   color: #333;
   margin: 0;
@@ -6,23 +7,14 @@ body {
   flex-direction: column;
 }
 
-.app {
-  flex: 1;
-  padding: 20px;
-  max-width: 1200px;   
-  width: 100%;         
-  margin: 0 auto;      
-  box-sizing: border-box;
-}
-
 .header {
   text-align: center;
-  padding: 20px 0 30px;
-  background: linear-gradient(90deg, #1565c0, #6cb2ec);
+ 
+  background: linear-gradient(90deg, #1565c0, #42a5f5);
   color: white;
-  max-width: 70%;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .header h1 {
@@ -42,21 +34,25 @@ body {
 }
 
 .project-card {
-  background-color: white;
-  flex: 1 1 280px;
-  max-width: 400px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 2px solid #d8d8d8;  /* borde visible */
   box-sizing: border-box;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   cursor: pointer;
-  transition: all 0.3s ease-in-out
+  overflow: hidden;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 350px; 
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
+
 
 .contact-icon {
   margin-right: 8px;          
