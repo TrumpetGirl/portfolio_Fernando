@@ -66,10 +66,10 @@ function App() {
                   <CardMedia
                     component="img"
                     height="200"
-                    image="https://media.licdn.com/dms/image/v2/C562DAQEZsSxHaKxIXA/profile-treasury-image-shrink_1920_1920/profile-treasury-image-shrink_1920_1920/0/1597638183705?e=1759698000&v=beta&t=zV3AiwHk86ElY-KBP-GEA_iG4woxuq2Q4wegcRFcK6c"
+                    image="https://i.gifer.com/origin/92/925ba5768833520f46fdf1046b195d4d_w200.gif"
                     alt="Proyecto 1"
                   />
-                  <CardContent>
+                  <CardContent>     
                     <Typography variant="h6" color="primary">
                       Project 1
                     </Typography>
